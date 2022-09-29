@@ -1,7 +1,6 @@
 HDRDIR := include
 SRCDIR := src
 
-run:
-	g++ main.cpp $(SRCDIR)/ArrayList.cpp -I$(HDRDIR) -o out
-	./out
+compile:
+	g++ main.cpp $(SRCDIR)/LinkedList.cpp $(SRCDIR)/ArrayList.cpp -I$(HDRDIR) -o out
 
